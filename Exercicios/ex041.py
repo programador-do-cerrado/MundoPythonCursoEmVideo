@@ -22,7 +22,7 @@ elif idade > 9 and idade <= 14:
     print("Categoria INFANTIL")
 elif idade > 14 and idade <= 19:
     print("Categoria JÚNIOR")
-elif idade > 19 and idade <= 35:
+elif idade > 19 and idade <= 25:
     print("Categoria SÊNIOR")
 else:
     print("Categoria MASTER")
