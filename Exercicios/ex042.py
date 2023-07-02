@@ -6,3 +6,18 @@ tipo de triângulo será formado:
     * ISÓSCELES: dois lados iguais, um diferente
     * ESCALENO: todos os lados diferentes
 """
+r1 = float(input("Reta 1: "))
+r2 = float(input("Reta 2: "))
+r3 = float(input("Reta 3: "))
+
+if (r1 < r2 + r3) and (r2 < r3 + r1) and (r3 < r2 + r1):
+    print("É POSSÍVEL formar um triângulo")
+    if r1 == r2 and r1 == r3:
+        print("Formou um triângulo EQUILATERO")
+    elif:
+        print("Formou um triângulo ESCALENO")
+    elif:
+        print("Triângulo ISÓSCELES")
+else:
+    print("É IMPOSSIVEL formar um triângulo")
+    traing = False
