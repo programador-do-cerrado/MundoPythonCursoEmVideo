@@ -6,6 +6,7 @@ e condição de pagamento:
     – em até 2x no cartão: preço formal
     – 3x ou mais no cartão: 20% de juros
     """
+print('{:=^40}'.format(' Sileny Costa Ateliê '))
 valorInicial = float(input("Digite o valor do produto R$ "))
 print("Digite a forma de pagamento: ")
 print("[ 1 ] à vista dinheiro/cheque: 10% de desconto.")
