@@ -8,8 +8,8 @@ e mostre seu status, de acordo com a tabela abaixo:
         – 30 até 40: Obesidade
         – Acima de 40: Obesidade Mórbida
 """
-altura = float(input("Digite sua altura: (utilize . e não , para separar as casas decimais) "))
-peso = float(input("Digite seu peso: (utilize . e não , para separar as casas decimais) "))
+altura = float(input("Digite sua altura: (utilize . e não , para separar as casas decimais) (Kg) "))
+peso = float(input("Digite seu peso: (utilize . e não , para separar as casas decimais) () "))
 
 imc = peso / (altura * altura)
 print("Altura: {:.2f}m".format(altura))
