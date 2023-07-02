@@ -8,12 +8,14 @@ e condição de pagamento:
     """
 print('{:=^40}'.format(' Sileny Costa Ateliê '))
 valorInicial = float(input("Digite o valor do produto R$ "))
-print("Digite a forma de pagamento: ")
-print("[ 1 ] à vista dinheiro/cheque: 10% de desconto.")
-print("[ 2 ] à vista no cartão: 5% de desconto.")
-print("[ 3 ] em até 2x no cartão: preço formal")
-print("[ 4 ] 3x ou mais no cartão: 20% de juros")
-
+print("Qual vai ser a forma de pagamento ")
+print("""
+[ 1 ] à vista dinheiro/cheque: 10% de desconto.
+[ 2 ] à vista no cartão: 5% de desconto.
+[ 3 ] em até 2x no cartão: preço formal
+[ 4 ] 3x ou mais no cartão: 20% de juros
+"""
+      )
 opcao = int(input("Digite sua opção (1 - 4): "))
 
 if opcao == 1:
@@ -37,3 +39,5 @@ elif opcao == 4:
                                                                                                    valorFinal,
                                                                                                    nparcelas,
                                                                                                    prestacao))
+else:
+    print("Opção inválida")
