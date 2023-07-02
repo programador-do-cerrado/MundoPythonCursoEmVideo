@@ -16,7 +16,7 @@ print("""
 [ 4 ] 3x ou mais no cartão: 20% de juros
 """
       )
-opcao = int(input("Digite sua opção (1 - 4): "))
+opcao = int(input("Digite sua opção (1 - 4): ")) * (-1)
 
 if opcao == 1:
     valorFinal = valorInicial - (valorInicial * (10 / 100))
