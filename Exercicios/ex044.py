@@ -17,6 +17,22 @@ opcao = int(input("Digite sua opção (1 - 4): "))
 
 if opcao == 1:
     valorFinal = valorInicial - (valorInicial * (10 / 100))
-    print("Você vai pagar à vista.")
-    print("O seu produto custaria R$ {:.2f}, e passou a custar {:.2f}".format(valorInicial, valorFinal
-                                                                              ))
+    print("Você vai pagar à vista: dinheiro/cheque.")
+    print("O seu produto custaria R$ {:.2f}, com '10%' de desconto: R$ {:.2f}".format(valorInicial, valorFinal))
+elif opcao == 2:
+    valorFinal = valorInicial - (valorInicial * (5 / 100))
+    print("Você vai pagar à vista: cartão.")
+    print("O seu produto custaria R$ {:.2f}, com '5%' de desconto: R$ {:.2f}".format(valorInicial, valorFinal))
+elif opcao == 3:
+    prestacao = valorInicial / 2
+    print("Você vai pagar à vista: cartão.")
+    print("O seu produto custou R$ {:.2f}, em 2X de R$ {:.2f}".format(valorInicial, prestacao))
+elif opcao == 4:
+    nparcelas = int(input("Em quantas vezes: "))
+    valorFinal = valorInicial + (valorInicial * (20 / 100))
+    prestacao = valorFinal / nparcelas
+    print("Você vai pagar em {}X no cartão.".format(nparcelas))
+    print("O seu produto custaria R$ {:.2f}, passou a custar R$ {:.2f} em {}X de R$ {:.2f}".format(valorInicial,
+                                                                                                   valorFinal,
+                                                                                                   nparcelas,
+                                                                                                   prestacao))
