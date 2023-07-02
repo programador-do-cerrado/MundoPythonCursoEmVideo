@@ -8,3 +8,26 @@ e mostre seu status, de acordo com a tabela abaixo:
         – 30 até 40: Obesidade
         – Acima de 40: Obesidade Mórbida
 """
+altura = float(input("Digite sua altura: (utilize . e não , para separar as casas decimais "))
+peso = float(input("Digite seu peso: (utilize . e não , para separar as casas decimais "))
+
+imc = peso / (altura * altura)
+print("Altura: {:.2f}m".format(altura))
+print("Peso: {:.2f} kg".format(peso))
+print("O seu IMC está em  {:.2f} kg/m²".format(imc))
+print("Isso significa que: ")
+
+if imc < 18.5:
+    print("Você está abaixo do peso ideal")
+    print("Procure um médico, pois isso não é saudavel")
+elif 18.5 >= imc < 25:
+    print("Você está com o peso ideal")
+elif 25 >= imc < 30:
+    print("Você está ACIMA do peso")
+    print("Cuide-se")
+elif 30 >= imc < 40:
+    print("Voce está com um certo grau de obesidade")
+    print("Procure ajuda!")
+else:
+    print("Você está com um grau de Obesidade Mórbida")
+    print("Procure ajuda.")
