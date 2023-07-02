@@ -14,3 +14,9 @@ print("[ 3 ] em até 2x no cartão: preço formal")
 print("[ 4 ] 3x ou mais no cartão: 20% de juros")
 
 opcao = int(input("Digite sua opção (1 - 4): "))
+
+if opcao == 1:
+    valorFinal = valorInicial - (valorInicial * (10 / 100))
+    print("Você vai pagar à vista.")
+    print("O seu produto custaria R$ {:.2f}, e passou a custar {:.2f}".format(valorInicial, valorFinal
+                                                                              ))
