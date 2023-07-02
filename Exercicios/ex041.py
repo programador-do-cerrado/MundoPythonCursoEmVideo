@@ -8,3 +8,10 @@ leia o ano de nascimento de um atleta e mostre sua categoria, de acordo com a id
     * Até 25 anos: SÊNIOR
     * Acima de 25 anos: MASTER
 """
+from datetime import date
+
+nasc = int(input("Digite o ano de nascimento do atleta: AAAA "))
+atual = date.today().year
+idade = atual - nasc
+
+print("Estamos em {} e o atleta tem {} anos".format(atual, idade))
