@@ -40,3 +40,11 @@ for q in range(i, f + 1, p):
     print(q)
     print("Um texto qualquer que vai se repetir dento do laço!")
 print("Fim")
+
+# ------------------- Somatório
+
+s = 0
+for x in range(0, 6):
+    n = int(input('Digite um valor: '))
+    s = s + n
+print("O somatório de todos os valores foi {}".format(s))
