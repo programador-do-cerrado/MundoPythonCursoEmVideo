@@ -2,6 +2,7 @@
 Crie um programa que faça o computador jogar Jokenpô com você.
 """
 from random import randint
+from time import sleep
 
 itens = ('Pedra', 'Papel', 'Tesoura')
 computador = randint(0, 2)
@@ -15,6 +16,13 @@ print(
   """
 )
 jogador = int(input("Digite sua jogada "))
+
+print("JO")
+sleep(1)
+print("KEN")
+sleep(1)
+print("PO!!!")
+
 print('-=' * 10)
 print("Computador jogou {}.".format(itens[computador]))
 print("Jogador jogou {}.".format(itens[jogador]))
