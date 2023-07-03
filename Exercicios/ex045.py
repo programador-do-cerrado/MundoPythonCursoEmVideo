@@ -21,7 +21,29 @@ print("Jogador jogou {}.".format(itens[jogador]))
 print('-=' * 10)
 
 if computador == 0:  # Pedra
-
+    if jogador == 0:
+        print("EMPATE")
+    elif jogador == 1:
+        print("Voce ganhou.")
+    elif jogador == 2:
+        print("Você perdeu")
+    else:
+        print("Opção inválida. Não tente roubar.")
 elif computador == 1:  # Papel
-
+    if jogador == 0:
+        print("Voce perdeu.")
+    elif jogador == 1:
+        print("EMPATE")
+    elif jogador == 2:
+        print("Você ganhou")
+    else:
+        print("Opção inválida. Não tente roubar.")
 elif computador == 2:  # Tesoura
+    if jogador == 0:
+        print("Voce ganhou.")
+    elif jogador == 1:
+        print("VocÊ perdeu")
+    elif jogador == 2:
+        print("EMPATE")
+    else:
+        print("Opção inválida. Não tente roubar.")
