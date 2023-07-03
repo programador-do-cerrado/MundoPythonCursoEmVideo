@@ -6,5 +6,5 @@ from time import sleep
 
 for f in range(10, 0, -1):
     print("Contagem regressiva: {} ".format(f))
-    sleep(0.3)
+    sleep(1)
 print("Feliz ano novo")
