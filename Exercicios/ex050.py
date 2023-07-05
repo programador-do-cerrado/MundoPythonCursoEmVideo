@@ -18,3 +18,4 @@ for y in range(1, 7):
     if numDigitadoFim % 2 != 0:
         sImpar = s + numDigitadoFim
 print("O somatorio de todos os valores impares digitados é {}".format(sImpar))
+
