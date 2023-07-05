@@ -9,4 +9,5 @@ r = float(input("Digite o valor da razão dessa P.A: (utilize . para separar as 
 print("O primeiro termo dessa P.A. é {} e a razão é {}".format(a, r))
 
 for c in range(0, 11):
-   
+    a = a + r
+    print(a)
