@@ -13,8 +13,8 @@ for c in range(1, num + 1):
     else:
         print('\033[31m', end=' ')
     print("{}".format(c), end=' ')
-print("O número {} foi divisivel {} vezes".format(num, tot))
+print("\n\033[mO número {} foi divisivel {} vezes".format(num, tot))
 if tot == 2:
     print("O número {} não é primo".format(num))
-elif tot > 2:
+else:
     print("O número {} não é primo.".format(num))
