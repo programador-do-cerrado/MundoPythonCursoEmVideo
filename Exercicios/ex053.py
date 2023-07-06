@@ -23,7 +23,7 @@ if junto == inverso:
     print("Você digitou um palíndromo")
 else:
     print("O que vc digitou não é um palíndromo")
-
+print("Resultado do primeiro exemplo")
 print("***" * 20)
 
 inverso2 = junto[::-1]
